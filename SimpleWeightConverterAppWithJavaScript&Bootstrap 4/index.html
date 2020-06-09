@@ -73,7 +73,7 @@
         document.getElementById('output').style.visibility = 'hidden';
         document.getElementById('lbsInput').addEventListener('input', function (e) {
             let lbs = e.target.value;
-            if (lbs === '' || lbs === null) {
+            if (lbs === '' || lbs === null || lbs < 0) {
                 document.getElementById('output').style.visibility = 'hidden';
             } else {
                 document.getElementById('output').style.visibility = 'visible';
