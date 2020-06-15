@@ -1,21 +1,21 @@
 $(document).ready(function () {
-    $('.menu-toggler').click(function () { 
+    $('.menu-toggler').click(function () {
         $(this).toggleClass('open')
         $('.top-nav').toggleClass('open')
     });
 
-    $('.top-nav .nav-link').click(function () { 
+    $('.top-nav .nav-link').click(function () {
         $(".menu-toggler").removeClass('open')
         $('.top-nav').removeClass('open')
     });
 
-    $('nav a[href*="#"]').click(function (e) {  
-        $('html, body').animate({ 
+    $('nav a[href*="#"]').click(function (e) {
+        $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
         }, 1000)
     });
 
-    $('#up').click(function () { 
+    $('#up').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 2000)
